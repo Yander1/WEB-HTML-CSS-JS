@@ -16,7 +16,20 @@ function mostrar_menu(){
     document.querySelector(".menu").classList.toggle("mostrar_menu")
 }
 
+
+
+//scroll
+
+
+
 /*conteo numero */
+
+conteo()
+
+
+
+function conteo(){
+
 const color=document.getElementById('fondo_color')
 
 
@@ -37,8 +50,8 @@ let cantidadgeneral3=0
 
 let tiempo=setInterval(() => {
     cantidad+=1
-    numero.textContent=cantidad
-    
+            numero.textContent=cantidad
+
     if(cantidad===5000){
         cantidad=0
         cantidadgeneral+=1
@@ -72,3 +85,5 @@ let tiempo3=setInterval(() => {
         }
     }
 }, 1);
+
+}

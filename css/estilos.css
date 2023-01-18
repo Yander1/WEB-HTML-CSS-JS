@@ -20,7 +20,7 @@ header{
 }
 
 .container__header{
-    max-width: 1200px;
+    max-width: 1500px;
     height: 100%;
     margin: auto;
     padding: 40px;
@@ -141,7 +141,7 @@ main{
 }
 
 .banner{
-    height: 18vw;
+    height: 250px;
     display: flex;
     align-items: center;
     background: #121214;
@@ -149,13 +149,13 @@ main{
 }
 
 .banner__icon-heart{
-    width: 35%;
+    width: 50%;
     height: 100%;
 }
 
 #icon_heart{
-    width: 35vw;
-    margin-top: -45px;
+    width: 100%;
+    margin-top: -15%;
     position: relative;
     filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
 }
@@ -327,7 +327,7 @@ box-shadow: 0px 0px 43px -22px rgba(0,0,0,0.75);
 
 .container__informacion{
     background: #000;
-    height: 500px;
+    height: 50rem;
 
 
 }
@@ -472,16 +472,19 @@ box-shadow: 0px 0px 43px -22px rgba(0,0,0,0.75);
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: #69F1A1;
+   
 }
 
 .tiemposs{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1300px;
     padding: 40px;
+    
     margin: auto;
+    background-color: #69F1A1;
+    margin-bottom: 5rem;
    
 }
 
@@ -580,11 +583,7 @@ box-shadow: 0px 0px 43px -22px rgba(0,0,0,0.75);
         display: none;
     }
 
-    .banner{
-        width: 100%;
-        height: 25vw;
-        flex-wrap: wrap;
-    }
+   
 
     #icon_fire{
         display: none;
@@ -592,14 +591,12 @@ box-shadow: 0px 0px 43px -22px rgba(0,0,0,0.75);
 
     #icon_heart{
         left: 0;
-        margin-top: 15px;
+        margin-top: 20px;
 
     }
 
     .banner__text{
-        width: 100%;
-        margin-top: -27vw;
-        padding-left: 34vw;
+        width: 50%;
     }
 }
 
@@ -627,12 +624,12 @@ box-shadow: 0px 0px 43px -22px rgba(0,0,0,0.75);
 
 }
 
-@media (max-width:400px){
+@media (max-width:390px){
 
       /*cajas de info*/
 
       .container__oferta {
-        max-width: 1200px;
+        max-width: 100%;
         height: 100%;
         align-items: center;
         /* text-align: center; */
@@ -657,11 +654,39 @@ box-shadow: 0px 0px 43px -22px rgba(0,0,0,0.75);
        
     }
 
+    #icon_heart{
+        margin-top: -13px;
+    }
+
     .container__oferta {
         /* max-width: 1200px; */
         height: 100%;
         border: 0;
         /* display: flex; */
         margin-top: 10vw;
+    }
+
+    .banner__text h2{
+        font-size: 11px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 38vw;
+        flex-wrap: wrap;
+    }
+
+    .banner__text {
+        width: 50%;
+        padding: 20px;
+
+    }
+
+    .container__banner {
+        margin-top: 70px;
+    }
+
+    .informacion{
+        display: block;
     }
 }
